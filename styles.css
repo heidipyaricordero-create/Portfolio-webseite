@@ -470,6 +470,57 @@ button {
     color: var(--primary);
 }
 
+/* Impressum */
+.impressum-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.impressum-section {
+    background: var(--bg-alt);
+    padding: 30px;
+    border-radius: var(--radius);
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.impressum-section:hover {
+    border-color: var(--primary);
+}
+
+.impressum-section h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.impressum-section p {
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.impressum-section a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.impressum-section a:hover {
+    text-decoration: underline;
+}
+
+.privacy-content h4 {
+    color: var(--secondary);
+    margin: 20px 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.privacy-content h4:first-child {
+    margin-top: 0;
+}
+
 /* Footer */
 .footer {
     padding: 40px 0;
@@ -721,5 +772,18 @@ button {
 
     .contact-card {
         padding: 20px 25px;
+    }
+
+    /* Impressum Mobile */
+    .impressum-section {
+        padding: 20px;
+    }
+
+    .impressum-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .privacy-content h4 {
+        font-size: 1rem;
     }
 }
