@@ -470,6 +470,18 @@ button {
     color: var(--primary);
 }
 
+/* LinkedIn Badge */
+.linkedin-badge {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.LI-profile-badge {
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
 /* Impressum */
 .impressum-content {
     max-width: 800px;
@@ -785,5 +797,10 @@ button {
 
     .privacy-content h4 {
         font-size: 1rem;
+    }
+
+    /* LinkedIn Badge Mobile */
+    .linkedin-badge {
+        margin-top: 30px;
     }
 }
