@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lebenslauf - Heidi Pyari Cordero</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 8mm;
+            @top-left { content: ""; }
+            @top-right { content: ""; }
+            @bottom-left { content: ""; }
+            @bottom-right { content: ""; }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 10pt;
+            line-height: 1.3;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 8mm;
+            background: white;
+        }
+
+        @media print {
+            body {
+                padding: 8mm;
+                max-width: 100%;
+                font-size: 10pt;
+                line-height: 1.3;
+            }
+            .no-print {
+                display: none;
+            }
+            .page-break {
+                page-break-after: always;
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #2c3e50;
+        }
+
+        .header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #3498db;
+            margin-bottom: 8px;
+        }
+
+        .header h1 {
+            font-size: 22pt;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }
+
+        .header .title {
+            font-size: 12pt;
+            color: #3498db;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            font-size: 9pt;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .contact-info span {
+            margin: 0 5px;
+        }
+
+        .section {
+            margin-bottom: 8px;
+        }
+
+        .section-title {
+            font-size: 11pt;
+            color: #2c3e50;
+            border-bottom: 1px solid #3498db;
+            padding-bottom: 2px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: bold;
+        }
+
+        .entry {
+            margin-bottom: 5px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1px;
+        }
+
+        .entry-title {
+            font-weight: bold;
+            font-size: 10pt;
+            color: #2c3e50;
+        }
+
+        .entry-date {
+            font-size: 9pt;
+            color: #666;
+        }
+
+        .entry-subtitle {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 2px;
+            font-size: 9pt;
+        }
+
+        .entry-description {
+            font-size: 9pt;
+            color: #444;
+            margin-left: 12px;
+        }
+
+        .entry-description li {
+            margin-bottom: 1px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .skill-category h4 {
+            font-size: 10pt;
+            color: #2c3e50;
+            margin-bottom: 2px;
+            font-weight: bold;
+        }
+
+        .skill-tags {
+            font-size: 9pt;
+            color: #555;
+            line-height: 1.3;
+        }
+
+        .print-btn, .download-btn {
+            display: none;
+        }
+
+        .page-break {
+            page-break-before: always;
+            break-before: always;
+        }
+
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <img src="Aragon-Headshot-Heidi-Cordero-2026-04-08-35.jpeg" alt="Heidi Pyari Cordero">
+        <h1>Heidi Pyari Cordero</h1>
+        <div class="title">QA Engineer</div>
+        <div class="contact-info">
+            <span>Hamburg</span>
+            <span>📱 +49 177 533 2472</span>
+            <span>heidi.pyari.cordero@gmail.com</span>
+            <span>🔗 <a href="https://www.linkedin.com/in/heidi-pyari-cordero/" target="_blank" style="color: #3498db;">LinkedIn</a></span>
+            <span>🔗 <a href="https://github.com/heidipyaricordero-create" target="_blank" style="color: #3498db;">GitHub</a></span>
+            <span>🌐 <a href="https://heidipyaricordero.netlify.app" target="_blank" style="color: #3498db;">heidipyaricordero.netlify.app</a></span>
+        </div>
+    </div>
+
+    <!-- Profil -->
+    <div class="section">
+        <h2 class="section-title">PROFIL</h2>
+        <p style="font-size: 9pt; line-height: 1.4;">Analytische QA-Spezialistin mit Fokus auf Softwarequalität und effiziente Testing-Prozesse. Ich verfüge über fundierte Kenntnisse in manuellen und automatisierten Testverfahren mit Selenium, Postman und XPath. Meine Expertise umfasst die Erstellung von Testplänen, präzises Fehlerreporting in Jira sowie fundiertes Know-how in SQL-Datenbanken und API-Testing. Als Junior QA Engineer bringe ich ein tiefes Verständnis für agile Entwicklung und moderne Engineering-Prinzipien wie TDD und OOP mit, um die Softwarequalität nachhaltig zu steigern.</p>
+    </div>
+
+    <!-- Fähigkeiten -->
+    <div class="section">
+        <h2 class="section-title">FÄHIGKEITEN & KOMPETENZEN</h2>
+        
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>QA Engineering</h4>
+                <div class="skill-tags">Postman, Jira, Selenium, XPath, Manual Testing, Automated Testing</div>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Development & Data</h4>
+                <div class="skill-tags">Python, Java, HTML, CSS, SQL</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="section">
+        <h2 class="section-title">Soft Skills</h2>
+        <div class="skill-tags">Detailorientierung, Kritisches Denken, Problemlösung, Kommunikation, Analytisches Denken</div>
+    </div>
+
+    <!-- Ausbildung -->
+    <div class="section">
+        <h2 class="section-title">AUSBILDUNG</h2>
+        
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Software Engineering / QA Engineering</span>
+                <span class="entry-date">Feb 2025 – Mai 2026</span>
+            </div>
+            <div class="entry-subtitle">Masterschool Institute of Technology, Berlin</div>
+            <ul class="entry-description">
+                <li>Intensive Praxis in der Entwicklung von Full-Stack-Anwendungen unter Verwendung von JavaScript, React, Node.js und SQL</li>
+                <li>Engineering-Prinzipien: Aktive Anwendung von OOP, TDD und Versionskontrolle (Git/GitHub) in realen Projekten</li>
+                <li>Infrastruktur: Aufbau skalierbarer Anwendungen mit RESTful APIs, Cloud-Services und CI/CD-Pipelines</li>
+                <li>Quality Assurance: Umfassende Ausbildung in manuellem und automatisiertem Testen sowie Softwareentwicklungsprozessen, ISTQB Zertifizierung</li>
+            </ul>
+            <div class="entry-description" style="margin-top: 4px;">
+                <a href="Heidi Cordero - QA Engineering - DE.pdf" target="_blank" style="color: #3498db;">Zertifikat anzeigen</a>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Online-Marketing-Manager</span>
+                <span class="entry-date">Dez 2025 – Jan 2026</span>
+            </div>
+            <div class="entry-subtitle">Digital Career Institute, Berlin</div>
+            <ul class="entry-description">
+                <li>1-jährige Vollzeit Ausbildung mit dem Fokus auf SEO / SEM Marketing</li>
+                <li>Social Media Marketing, E-Mail-Marketing, PR, Branding, Google Ads, Meta Ads</li>
+                <li>Praktische Unterstützung von Partnerfirmen bei der Steigerung ihrer Sichtbarkeit</li>
+                <li>auf Social Media und Google sowie der Conversion Rate</li>
+            </ul>
+            <div class="entry-description" style="margin-top: 4px;">
+                <a href="Zertifikat_Cordero, Heidi_FbW OM 23-D01 A 2 (1).pdf" target="_blank" style="color: #3498db;">Zertifikat anzeigen</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projekte -->
+    <div class="section" style="page-break-before: always;">
+        <h2 class="section-title">PROJEKTE</h2>
+        
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">QA Training Portfolio</span>
+                <span class="entry-date">Dez 2025 – Jan 2026</span>
+            </div>
+            <div class="entry-subtitle">
+                <a href="https://github.com/heidipyaricordero-create/QA-Training-Portfolio" target="_blank" style="color: #3498db;">Project Link</a>
+            </div>
+            <ul class="entry-description">
+                <li>Entwicklung eines umfassenden QA-Übungsportfolios zum Erlernen und Anwenden von Testmethodiken</li>
+                <li>Verwendung von Selenium, Postman, Jira und SQL für verschiedene Testübungen</li>
+                <li>Praktische Durchführung von manuellen und automatisierten Testverfahren</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Zootopia with API Integration</span>
+            </div>
+            <div class="entry-subtitle">
+                <a href="https://github.com/heidipyaricordero-create/zootopiawithapi" target="_blank" style="color: #3498db;">Project Link</a>
+            </div>
+            <ul class="entry-description">
+                <li>Erweiterung der Zootopia-Webseite um eine funktionale API-Integration</li>
+                <li>Technische Umsetzung mittels REST-APIs, JSON und JavaScript</li>
+                <li>Ermöglichung eines Echtzeit-Abrufs von Tierdaten und Informationen</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Movies SQL API Database</span>
+            </div>
+            <div class="entry-subtitle">
+                <a href="https://github.com/heidipyaricordero-create/MoviesSQLAPIHTML" target="_blank" style="color: #3498db;">Project Link</a>
+            </div>
+            <ul class="entry-description">
+                <li>Entwicklung einer Movie-Datenbank mit direkter SQL-Datenbankintegration</li>
+                <li>Verwendung von HTML, CSS, JavaScript und MySQL für Frontend und Backend</li>
+                <li>Implementierung einer Suchfunktion sowie der Verwaltung von Film- und Seriendaten</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Berufserfahrung -->
+    <div class="section">
+        <h2 class="section-title">BERUFSERFAHRUNG</h2>
+        
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Freelance & Media Projects</span>
+                <span class="entry-date">Mai 2022 – Feb 2023</span>
+            </div>
+            <div class="entry-subtitle">Selbstständig</div>
+            <ul class="entry-description">
+                <li>Erstellung von Mediendesign-Kampagnen für 5+ Social-Media-Kanäle</li>
+                <li>Verwaltung von Google Ads und Meta Ads mit monatlichem Budget</li>
+                <li>Entwicklung von Content-Strategien zur Steigerung der Reichweite</li>
+                <li>Durchführung von A/B-Tests zur Optimierung von Anzeigenperformance</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Praxis Management & Marketing</span>
+                <span class="entry-date">Jul 2021 – Dez 2023</span>
+            </div>
+            <div class="entry-subtitle">Praxis Dr. med. Renata Asmussen-Kaiser, Kiel | Praxis Dr. med. Holger Berges, Hamburg</div>
+            <ul class="entry-description">
+                <li>Koordination von Terminen und Patientenkommunikation für 2 Arztpraxen</li>
+                <li>Implementierung von CRM-System (Medys) zur Verwaltung von 1.000+ Patientendaten</li>
+                <li>Entwicklung von Marketingstrategien zur Gewinnung neuer Patienten</li>
+                <li>Erstellung von Berichten und Analysen zur Praxisleistung</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Vertrieb & Schulung</span>
+                <span class="entry-date">Jan 2016 – Jun 2021</span>
+            </div>
+            <div class="entry-subtitle">oceanBASIS</div>
+            <ul class="entry-description">
+                <li>Durchführung von Vertriebstrainings für 20+ Kosmetikerinnen</li>
+                <li>Aufbau von Kundenbeziehungen mit Umsatzsteigerung im Vertriebsgebiet</li>
+                <li>Pflege von Kundendatenbanken mittels Cobra und PHP</li>
+                <li>Organisation und Durchführung von Produktworkshops</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sprachen -->
+    <div class="section">
+        <h2 class="section-title">SPRACHEN</h2>
+        <div class="entry-description">
+            <li><strong>Deutsch:</strong> Muttersprache</li>
+            <li><strong>Englisch:</strong> C1.2</li>
+        </div>
+    </div>
+
+</body>
+</html>
