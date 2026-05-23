@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Heidi Pyari Cordero</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 8mm;
+            @top-left { content: ""; }
+            @top-right { content: ""; }
+            @bottom-left { content: ""; }
+            @bottom-right { content: ""; }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 10pt;
+            line-height: 1.3;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 8mm;
+            background: white;
+        }
+
+        @media print {
+            body {
+                padding: 8mm;
+                max-width: 100%;
+                font-size: 10pt;
+                line-height: 1.3;
+            }
+            .no-print {
+                display: none;
+            }
+            .page-break {
+                page-break-after: always;
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #2c3e50;
+        }
+
+        .header h1 {
+            font-size: 22pt;
+            color: #2c3e50;
+            margin-bottom: 3px;
+        }
+
+        .header .title {
+            font-size: 12pt;
+            color: #3498db;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            font-size: 9pt;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .contact-info span {
+            margin: 0 5px;
+        }
+
+        .section {
+            margin-bottom: 8px;
+        }
+
+        .section-title {
+            font-size: 11pt;
+            color: #2c3e50;
+            border-bottom: 1px solid #3498db;
+            padding-bottom: 2px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: bold;
+        }
+
+        .entry {
+            margin-bottom: 5px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1px;
+        }
+
+        .entry-title {
+            font-weight: bold;
+            font-size: 10pt;
+            color: #2c3e50;
+        }
+
+        .entry-date {
+            font-size: 9pt;
+            color: #666;
+        }
+
+        .entry-subtitle {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 2px;
+            font-size: 9pt;
+        }
+
+        .entry-description {
+            font-size: 9pt;
+            color: #444;
+            margin-left: 12px;
+        }
+
+        .entry-description li {
+            margin-bottom: 1px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .skill-category h4 {
+            font-size: 10pt;
+            color: #2c3e50;
+            margin-bottom: 2px;
+            font-weight: bold;
+        }
+
+        .skill-tags {
+            font-size: 9pt;
+            color: #555;
+            line-height: 1.3;
+        }
+
+        .print-btn, .download-btn {
+            display: none;
+        }
+
+        .page-break {
+            page-break-before: always;
+            break-before: always;
+        }
+
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Heidi Cordero</h1>
+        <div class="title">QA Engineer</div>
+        <div class="contact-info">
+            <span>Hamburg, Germany</span>
+            <span>+49 177 533 2472</span>
+            <span>heidi.pyari.cordero@gmail.com</span>
+            <span><a href="https://heidipyaricordero.netlify.app" target="_blank" style="color: #3498db;">Portfolio</a></span>
+            <span><a href="https://www.linkedin.com/in/heidi-pyari-cordero/" target="_blank" style="color: #3498db;">LinkedIn</a></span>
+            <span><a href="https://github.com/heidipyaricordero-create" target="_blank" style="color: #3498db;">GitHub</a></span>
+        </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="section">
+        <h2 class="section-title">SUMMARY</h2>
+        <p style="font-size: 9pt; line-height: 1.4;">Analytical QA Specialist with a focus on software quality and efficient testing processes. I have solid knowledge of manual and automated testing procedures using Selenium, Postman, and XPath. My expertise includes creating test plans, precise bug reporting in Jira, and strong know-how in SQL databases and API testing. As a Junior QA Engineer, I bring a deep understanding of agile development and modern engineering principles such as TDD and OOP to sustainably enhance software quality.</p>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="section">
+        <h2 class="section-title">TECHNICAL SKILLS</h2>
+        <div class="skill-tags">Test Automation, Selenium, XPath, Python, OOP, Flask, HTML, CSS, SQL, SQLite</div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="section">
+        <h2 class="section-title">SOFT SKILLS</h2>
+        <div class="skill-tags">Problem Solving, Attention to Detail, Critical Thinking, Communication, Teamwork</div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+        <h2 class="section-title">EDUCATION</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Software Engineering / QA Engineering</span>
+                <span class="entry-date">Sep 2025 – May 2026</span>
+            </div>
+            <div class="entry-subtitle">Masterschool Institute of Technology, Berlin — Professional Training</div>
+            <ul class="entry-description">
+                <li>Intensive practice in developing full-stack applications using JavaScript, React, Node.js, and SQL</li>
+                <li>Active application of OOP, TDD, and version control (Git/GitHub) in real-world projects</li>
+                <li>Infrastructure: Building scalable applications with RESTful APIs, cloud services, and CI/CD pipelines</li>
+                <li>Quality Assurance: Comprehensive training in manual and automated testing as well as software development processes, ISTQB certification</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Online Marketing Manager</span>
+                <span class="entry-date">Feb 2023 – Apr 2024</span>
+            </div>
+            <div class="entry-subtitle">Digital Career Institute, Berlin — Professional Training</div>
+            <ul class="entry-description">
+                <li>Focus on SEO/SEM and performance marketing (Google Ads, Meta Ads, Social Media, E-Mail Marketing, PR & Branding)</li>
+                <li>Practical support for partner companies in increasing their visibility on Google and Social Media as well as optimizing conversion rates</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section" style="page-break-before: always;">
+        <h2 class="section-title">PROJECTS</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Masterschool QA TestAuto Project</span>
+                <span class="entry-date">Apr 2026</span>
+            </div>
+            <div class="entry-subtitle">
+                <a href="https://github.com/heidipyaricordero-create" target="_blank" style="color: #3498db;">Project Link</a>
+            </div>
+            <ul class="entry-description">
+                <li>Architecture: Implemented Page Object Model (POM) for better maintainability and clean separation of test and logic</li>
+                <li>Tech Stack: Python, Selenium WebDriver, and Pytest with POM</li>
+                <li>Best Practices: Use of Git/GitHub, virtual environments (.venv), and structured repository management</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">QA Training Portfolio</span>
+                <span class="entry-date">Feb 2025 – Apr 2026</span>
+            </div>
+            <div class="entry-subtitle">
+                <a href="https://github.com/heidipyaricordero-create/QA-Training-Portfolio" target="_blank" style="color: #3498db;">Project Link</a>
+            </div>
+            <ul class="entry-description">
+                <li>Development of a comprehensive QA practice portfolio for learning and applying testing methodologies</li>
+                <li>Use of Selenium, Postman, Jira, and SQL for various testing exercises</li>
+                <li>Practical execution of manual and automated testing procedures</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Zootopia with API Integration</span>
+                <span class="entry-date">Dec 2025 – Jan 2026</span>
+            </div>
+            <div class="entry-subtitle">
+                <a href="https://github.com/heidipyaricordero-create/zootopiawithapi" target="_blank" style="color: #3498db;">Project Link</a>
+            </div>
+            <ul class="entry-description">
+                <li>Extended the Zootopia website with functional API integration</li>
+                <li>Technical implementation using REST APIs, JSON, and JavaScript</li>
+                <li>Enabled real-time retrieval of animal data and information</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="section">
+        <h2 class="section-title">EXPERIENCE</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Media Projects</span>
+                <span class="entry-date">May 2022 – Feb 2023</span>
+            </div>
+            <div class="entry-subtitle">Self-Employed — Remote</div>
+            <ul class="entry-description">
+                <li>Created media design campaigns for 5+ social media channels</li>
+                <li>Managed Google Ads and Meta Ads with monthly budget oversight</li>
+                <li>Developed content strategies to increase reach</li>
+                <li>Conducted A/B testing to optimize ad performance</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Practice Management & Marketing</span>
+                <span class="entry-date">Jul 2021 – Dec 2022</span>
+            </div>
+            <div class="entry-subtitle">Praxis Dr. med. Renata Asmussen-Kaiser, Kiel & Praxis Dr. med. Holger Berges, Hamburg</div>
+            <ul class="entry-description">
+                <li>Coordinated appointments and patient communication for 2 medical practices</li>
+                <li>Implemented CRM system (Medys) to manage 1,000+ patient records</li>
+                <li>Developed marketing strategies to attract new patients</li>
+                <li>Created reports and analyses on practice performance</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Sales & Training</span>
+                <span class="entry-date">Jan 2016 – Jun 2021</span>
+            </div>
+            <div class="entry-subtitle">oceanBASIS — Kiel</div>
+            <ul class="entry-description">
+                <li>Conducted sales training for 20+ cosmeticians</li>
+                <li>Built customer relationships with revenue growth in the sales territory</li>
+                <li>Maintained customer databases using Cobra and PHP</li>
+                <li>Organized and conducted product workshops</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Certificates -->
+    <div class="section">
+        <h2 class="section-title">CERTIFICATES</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">QA Engineer</span>
+                <span class="entry-date">May 2026</span>
+            </div>
+            <div class="entry-subtitle">MSIT Masterschool GmbH — <a href="Heidi Cordero - QA Engineering - DE.pdf" target="_blank" style="color: #3498db;">Certificate</a></div>
+            <ul class="entry-description">
+                <li>Test Automation & Tools: Creation of robust test scripts with Selenium WebDriver & Python, as well as API testing</li>
+                <li>Testing Methodologies: Solid application of smoke, regression, and black-box tests across the entire Software Development Life Cycle (SDLC)</li>
+                <li>Databases & Backend: Data validation using SQL and fundamentals of backend testing with Flask</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">IT Consultant & Online Marketing Consultant</span>
+                <span class="entry-date">Apr 2024</span>
+            </div>
+            <div class="entry-subtitle">DCI Digital Career Institute — <a href="Zertifikat_Cordero, Heidi_FbW OM 23-D01 A 2 (1).pdf" target="_blank" style="color: #3498db;">Certificate</a></div>
+            <ul class="entry-description">
+                <li>1-year full-time training with focus on SEO/SEM Marketing, Social Media Marketing, E-Mail Marketing, and PR</li>
+                <li>Practical support for partner companies in increasing their visibility on Social Media and Google as well as improving conversion rates</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Languages -->
+    <div class="section">
+        <h2 class="section-title">LANGUAGES</h2>
+        <div class="entry-description">
+            <li><strong>German:</strong> Native</li>
+            <li><strong>English:</strong> C1</li>
+        </div>
+    </div>
+
+</body>
+</html>

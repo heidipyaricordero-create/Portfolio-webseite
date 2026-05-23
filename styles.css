@@ -133,6 +133,20 @@ button {
     color: var(--primary);
 }
 
+.nav-links .btn-outline {
+    padding: 8px 20px;
+    border: 2px solid var(--text-muted);
+    border-radius: 50px;
+    color: var(--text-muted);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.nav-links .btn-outline:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
 .hamburger {
     display: none;
     cursor: pointer;
